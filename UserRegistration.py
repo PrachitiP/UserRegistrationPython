@@ -36,6 +36,33 @@ class UserRegistration:
         else:
             return 'invalid'
 
+    def passwordRule2(self):
+        patternforPassword2 = "^(?=.*[A-Z]).{8,}$"
+        if re.search(patternforPassword2, password2):
+            return 'valid'
+        else:
+            return 'invalid'
+
+    def passwordRule2(self):
+        patternforPassword2 = "^(?=.*[A-Z]).{8,}$"
+        if re.search(patternforPassword2, password2):
+            return 'valid'
+        else:
+            return 'invalid'
+
+    def passwordRule3(self):
+        patternforPassword3 = "^(?=.*[A-Z])(?=.*?[0-9]).{8,}$"
+        if re.search(patternforPassword3, password3):
+            return 'valid'
+        else:
+            return 'invalid'
+        
+    def passwordRule4(self):
+        patternforPassword4 = "^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+        if re.search(patternforPassword4, password4):
+            return 'valid'
+        else:
+            return 'invalid'
 
 if __name__ == '__main__':
     print("Welcome to User Registration")
@@ -56,5 +83,13 @@ if __name__ == '__main__':
     password1 = input("Enter password:")
     print(userreg.passwordRule1())
 
+    password2 = input("Enter password:")
+    print(userreg.passwordRule2())
+
+    password3 = input("Enter password:")
+    print(userreg.passwordRule3())
+    
+    password4 = input("Enter password:")
+    print(userreg.passwordRule4())
 
 
