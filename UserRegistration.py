@@ -28,17 +28,33 @@ class UserRegistration:
             return 'valid'
         else:
             return 'invalid'
+
+    def passwordRule1(self):
+        patternforPassword1 = "^[a-zA-Z]{8}$"
+        if re.search(patternforPassword1, password1):
+            return 'valid'
+        else:
+            return 'invalid'
+
+
 if __name__ == '__main__':
     print("Welcome to User Registration")
     userreg = UserRegistration()
+
     firstName = input("Enter first name:")
     print(userreg.validateFirstName())
+
     lastName = input("Enter last name:")
     print(userreg.validateLastName())
+
     email = input("Enter email id:")
     print(userreg.validateEmail())
+
     phoneNo = input("Enter phone no:")
     print(userreg.validatePhoneNo())
+
+    password1 = input("Enter password:")
+    print(userreg.passwordRule1())
 
 
 
