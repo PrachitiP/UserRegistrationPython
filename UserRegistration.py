@@ -9,7 +9,7 @@ class UserRegistration:
         else:
             return 'invalid'
         
-     #UC1- Validate Last Name
+     #UC2- Validate Last Name
     def validateLastName(self):
         patternforLastname = '^[A-Z]{1}[a-z]{3,}$'
         if re.search(patternforLastname, firstName):
@@ -17,7 +17,7 @@ class UserRegistration:
         else:
             return 'invalid'
         
-     #UC1- Validate Email Id
+     #UC3- Validate Email Id
     def validateEmail(self):
         patternforEmail = "^([a-zA-Z]{3,}([.|_|+|-]?[a-zA-Z0-9]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.]?[a-zA-Z]{2,3})?)$"
         if re.search(patternforEmail, email):
