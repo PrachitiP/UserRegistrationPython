@@ -1,6 +1,7 @@
 import re
 class UserRegistration:
 
+     #UC1- Validate First Name
     def validateFirstName(self):
         patterforFirstname = '^[A-Z]{1}[a-z]{3,}$'
         if re.search(patterforFirstname, firstName):
