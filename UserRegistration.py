@@ -9,7 +9,7 @@ class UserRegistration:
         else:
             return 'invalid'
         
-     #UC1- Validate Last Name
+     #UC2- Validate Last Name
     def validateLastName(self):
         patterforLastname = '^[A-Z]{1}[a-z]{3,}$'
         if re.search(patterforLastname, firstName):
