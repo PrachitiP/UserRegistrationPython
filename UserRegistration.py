@@ -1,20 +1,23 @@
 import re
 class UserRegistration:
-
+    
+     #UC1- Validate First Name
     def validateFirstName(self):
         patternforFirstname = '^[A-Z]{1}[a-z]{3,}$'
         if re.search(patternforFirstname, firstName):
             return 'valid'
         else:
             return 'invalid'
-
+        
+     #UC1- Validate Last Name
     def validateLastName(self):
         patternforLastname = '^[A-Z]{1}[a-z]{3,}$'
         if re.search(patternforLastname, firstName):
             return 'valid'
         else:
             return 'invalid'
-
+        
+     #UC1- Validate Email Id
     def validateEmail(self):
         patternforEmail = "^([a-zA-Z]{3,}([.|_|+|-]?[a-zA-Z0-9]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.]?[a-zA-Z]{2,3})?)$"
         if re.search(patternforEmail, email):
